@@ -1,26 +1,26 @@
-var timerx = 480
-var timery = 490
-var minsx = timerx - 65
-var secx = timerx + 15
-var minsy = timery - 15
-var timeinsecs = floor(target_fill / 60)
-var mins = max(floor(timeinsecs / 60), 0)
-var secs = max(timeinsecs % 60, 0)
-var gaining_time = timer > target_fill
-var display_mins = string(abs(mins))
-var display_secs = string(abs(secs))
+var timeinsecs, mins, secs, display_mins, display_secs, gaining_time;
+
+gaining_time = target_fill > timer;
+timeinsecs = floor(timer / 60);
+mins = max(floor(timeinsecs / 60), 0);
+secs = max(timeinsecs % 60, 0);
+display_mins = string(abs(mins));
+display_secs = string(abs(secs));
 
 if (secs < 10)
-	display_secs = "0" + display_secs
+    display_secs = "0" + display_secs;
 
-draw_set_font(global.timerfont)
-draw_set_halign(fa_left)
-draw_sprite_ext(gaining_time ? spr_timer_gain : spr_timer, secs % 2, 480, timery, 1, 1, 0, c_white, 1)
+draw_set_font(global.timerfont);
+
+draw_sprite_ext(sprite_index, ((sprite_index != spr_timer_timesup) ? secs % 2 : image_index), 475, timer_y, 1, 1, 0, c_white, 1);
 
 if (mins < 10)
-	display_mins = "0" + display_mins
+	display_mins = "0" + display_mins;
 
-draw_set_color(gaining_time ? #60D048 : #F80000)
-draw_text(minsx, minsy, display_mins)
-draw_text(secx, minsy + 1, display_secs)
-draw_set_color(c_white)
+if (sprite_index != spr_timer_timesup)
+{
+	draw_set_color(gaining_time ? #60D048 : #F80000);
+	draw_text_scribble(415, timer_y, display_mins);
+	draw_text_scribble(495, timer_y, display_secs);
+	draw_set_color(c_white);
+}

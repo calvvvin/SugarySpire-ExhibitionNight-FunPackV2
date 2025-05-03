@@ -45,7 +45,7 @@ function state_player_victory()
 	
 	if (place_meeting(x, y, obj_startGate))
 	{
-		if (true && global.InternalLevelName != "tutorial")
+		if (room == hub_paintstudio || room == hub_molasses)
 			sprite_index = spr_enterpainting
 		else
 			sprite_index = spr_entergate

@@ -65,12 +65,21 @@ if (instance_exists(ID))
 					instance_destroy(other.id)
 				
 				break
-				break
 			
 			case obj_betonbacon:
 				if (state != PlayerState.titlescreen && state != PlayerState.frozen)
 					instance_destroy(other.id)
 				
+				break
+				
+			case obj_melon:
+				if (state != PlayerState.titlescreen)
+					instance_destroy(other.id);
+				break
+				
+		    case obj_littlepopcorn:
+                if (state != PlayerState.frozen)
+                    instance_destroy(other.id);
 				break
 		}
 	}

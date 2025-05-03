@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "name": "Tilesets",
+    "path": "folders/Tilesets.yy",
   },
   "spriteId": {
     "name": "tilespr_ts_sucrose",
@@ -24,7 +24,7 @@
     "name": "Sucrose",
     "path": "texturegroups/Sucrose",
   },
-  "tile_count": 1591,
+  "tile_count": 1600,
   "tileAnimation": {
     "FrameData": [
       0,
@@ -1618,6 +1618,15 @@
       1588,
       1589,
       1590,
+      1591,
+      1592,
+      1593,
+      1594,
+      1595,
+      1596,
+      1597,
+      1598,
+      1599,
     ],
     "SerialiseFrameCount": 1,
   },

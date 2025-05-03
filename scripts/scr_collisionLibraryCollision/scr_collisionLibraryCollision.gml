@@ -231,7 +231,7 @@ function position_meeting_sidePlatform(arg0, arg1, arg2 = obj_sidePlatform)
 
 function instance_place_list_slopePlatform(arg0, arg1, arg2 = obj_slopePlatform, arg3 = undefined)
 {
-	var old_x = x
+	var old_x = x 
 	var old_y = y
 	var old_bbox_top = bbox_top
 	var old_bbox_bottom = bbox_bottom

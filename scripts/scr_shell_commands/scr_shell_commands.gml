@@ -468,6 +468,22 @@ function meta_give_all()
 	};
 }
 
+function sh_set_funvalue(arg0)
+{
+	global.GLOBAL_FUN = real(string_digits(arg0[1]))
+}
+
+function meta_set_funvalue()
+{
+	return 
+	{
+		description: "Sets FUN Value.",
+		arguments: ["<value>"],
+		suggestions: ["22"],
+		argumentDescriptions: []
+	};
+}
+
 function sh_give_prank(arg0)
 {
 	var confecti_objs = [obj_confectimallow, obj_confectichoco, obj_confecticrack, obj_confectiworm, obj_confecticandy]
