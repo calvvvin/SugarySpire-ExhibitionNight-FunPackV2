@@ -413,6 +413,10 @@ function scr_playerstate()
 		case PlayerState.frostburnstick:
 			state_function = state_player_frostburnstick
 			break
+			
+		case PlayerState.frostburndrift:
+			state_function = state_player_frostburndrift
+			break
 		
 		case PlayerState.supergrab:
 			state_function = state_player_supergrab

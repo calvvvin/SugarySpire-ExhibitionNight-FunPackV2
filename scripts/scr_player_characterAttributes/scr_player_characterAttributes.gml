@@ -198,6 +198,7 @@ function scr_characterSprite()
 	spr_timesupidle = scr_getCharacterSprite(spr_player_PZ_idle_timesUp)
 	spr_petdog = scr_getCharacterSprite(spr_player_PZ_dogMount_pet)
 	spr_dogMount_meteor = scr_getCharacterSprite(spr_player_PZ_dogMount_meteor)
+	spr_grindrail = scr_getCharacterSprite(spr_player_PZ_grindrail)
 	scr_characterTVSprite()
 	var char_arr = [Characters.Pizzelle]
 	

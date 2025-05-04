@@ -15,7 +15,7 @@ enemyAttack_TriggerEvent = function()
     var target_player = get_nearestPlayer()
     var facing_xscale = (-(getFacingDirection(target_player.x, x)))
     
-    if (scr_enemy_playerisnear(150,150) && grounded && state == States.frozen && enemyAttackTimer <= 0)
+    if (scr_enemy_playerisnear(150,150) && grounded && state == PlayerState.frozen && enemyAttackTimer <= 0)
     {
         state = PlayerState.titlescreen;
         hsp = 0;
@@ -35,10 +35,10 @@ enemyState_Attack = function()
 		with instance_create(x, y, obj_littlepopcorn) {
 			vsp = -10;
 			baddieStunTimer = 30;
-			state = States.charge;
+			state = PlayerState.charge;
 			image_xscale = other.image_xscale;
 		}
-		state = States.frozen;
+		state = PlayerState.frozen;
 		sprite_index = baddieSpriteWalk;
 		enemyAttackTimer = 200;
 	}

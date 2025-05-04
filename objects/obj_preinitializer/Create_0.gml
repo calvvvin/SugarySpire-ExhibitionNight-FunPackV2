@@ -112,11 +112,12 @@ enum PlayerState
 	frostburnslide = 89,
 	frostburnjump = 90,
 	frostburnstick = 91,
-	supergrab = 92,
-	fling_launch = 93,
-	freeflight = 94,
-	burrow = 100,
-	charcherryrun = 101	
+	frostburndrift = 92,
+	supergrab = 93,
+	fling_launch = 94,
+	freeflight = 95,
+	burrow = 101,
+	charcherryrun = 102	
 }
 
 enum Characters

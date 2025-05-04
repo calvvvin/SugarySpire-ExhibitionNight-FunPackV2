@@ -89,6 +89,8 @@ if (!(is_hub() || is_tutorial() || !scr_roomcheck() || room == mineshaft_elevato
 		}
 	}
 	
+	if (global.InternalLevelName != "sucrose")
+	{
 	with (HUDObject_timer)
 	{
 		var percentage = clamp(1 - (targetEscapeTime / global.MaxEscapeTime), 0, 1)
@@ -132,6 +134,7 @@ if (!(is_hub() || is_tutorial() || !scr_roomcheck() || room == mineshaft_elevato
 		}
 		
 		draw_sprite_ext(elm_coneBall.sprite_index, elm_coneBall.image_index, x, y, 1, 1, 0, c_white, 1)
+		}
 	}
 }
 

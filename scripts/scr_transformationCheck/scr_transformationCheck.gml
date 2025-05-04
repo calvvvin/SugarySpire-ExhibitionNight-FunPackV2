@@ -72,6 +72,7 @@ function scr_transformationCheck(arg0)
 		case PlayerState.frostburnjump:
 		case PlayerState.frostburnslide:
 		case PlayerState.frostburnstick:
+		case PlayerState.frostburndrift:
 			transfo = "Frostburn"
 			break
 		

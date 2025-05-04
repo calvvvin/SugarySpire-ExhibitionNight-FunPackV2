@@ -14,7 +14,7 @@ if (get_panic() && !global.freezeframe && !is_tutorial())
 	if (global.EscapeTime > global.MaxEscapeTime)
 		global.MaxEscapeTime = global.EscapeTime
 	
-	if (global.EscapeTime > 0)
+	if (global.EscapeTime > 0 && global.InternalLevelName != "sucrose")
 		global.EscapeTime--
 	
 	if ((global.EscapeTime > 0 && (abs(global.EscapeTime) % 60) == 0) && global.Collect >= 5)
@@ -209,3 +209,6 @@ else
 bubblescale = approach(bubblescale, 0, 0.2)
 global.screenflash -= 1
 audio_listener_position(camera_get_view_x(view_camera[0]) + (cam_w / 2), camera_get_view_y(view_camera[0]) + (cam_h / 2), 0)
+global.dancetimer = approach(global.dancetimer, 0, 1);
+if (!instance_exists(obj_disco_toggle))
+global.dancetimer = 0;

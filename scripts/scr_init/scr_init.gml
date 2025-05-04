@@ -140,6 +140,7 @@ function scr_gameInit()
 	global.arank = 0
 	global.brank = 0
 	global.crank = 0
+	global.dancetimer = 0;
 	global.NewHighScore = false
 	global.HurtCounter = 0
 	global.LocalHurtCounter = 0

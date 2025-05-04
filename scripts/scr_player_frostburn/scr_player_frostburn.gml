@@ -65,7 +65,9 @@ function state_player_frostburnnormal()
 		inputBufferJump = 0
 		jumpStop = false
 		image_index = 0
-		sprite_index = spr_player_PZ_frostburn_jump
+		sprite_index = spr_player_PZ_frostburn_jump;
+		state = PlayerState.frostburnjump;
+        movespeed = hsp;
 		fmod_studio_event_instance_start(sndJump)
 		instance_create(x, y, obj_highJumpCloud1, 
 		{
@@ -174,9 +176,37 @@ function state_player_frostburnslide()
 		}
 	}
 	
+	if (move == -xscale && grounded)
+		{
+			sprite_index = spr_player_PZ_frostburn_drift
+			state = PlayerState.frostburndrift
+			image_index = 0
+			
+		}
+	
 	image_speed = 0.5
 }
 
+function state_player_frostburndrift()
+{	
+	hsp = approach(hsp, 0, 0.4)
+	if (sprite_animation_end())
+	{
+			if (grounded)
+			{
+			movespeed = 11
+			xscale *= -1
+			state = PlayerState.frostburnslide;
+			sprite_index = spr_player_PZ_frostburn_walk;
+			jumpStop = false;
+			image_index = 9;
+			image_speed = 0.5;
+			}
+			else
+			sprite_index = spr_player_PZ_frostburn_drift_fall;
+	}
+	image_speed = 0.35;
+}
 function state_player_frostburnjump()
 {
 	static blue_aft = 0

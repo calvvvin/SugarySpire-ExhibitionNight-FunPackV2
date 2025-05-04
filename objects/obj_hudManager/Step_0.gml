@@ -222,6 +222,7 @@ with (HUDObject_timer)
 		break
 	}
 	
+	if (global.InternalLevelName != "sucrose")
 	if (abs(global.EscapeTime - targetEscapeTime) <= 60)
 		targetEscapeTime = approach(targetEscapeTime, global.EscapeTime, 60)
 	else

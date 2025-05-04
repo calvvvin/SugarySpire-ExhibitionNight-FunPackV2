@@ -16,7 +16,7 @@ if (!global.freezeframe)
 					xscale = sign(hsp)
 			}
 			
-			if (state != PlayerState.frostburnslide)
+			if (state != PlayerState.frostburnslide && state != PlayerState.frostburndrift)
 				state = PlayerState.slipnslide
 			
 			movespeed = clamp(movespeed, 12, 14)

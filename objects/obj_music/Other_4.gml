@@ -1,7 +1,7 @@
 var sfxreverb_rooms = [hub_mindpalace, hub_mindvault]
 fmod_studio_system_set_parameter_by_name("sfxReverb", array_contains(sfxreverb_rooms, room), false)
 
-if (!global.panic)
+if (!global.panic || global.InternalLevelName == "sucrose")
 {
 	var target_room_music = ds_map_find_value(global.RoomMusicMap, room)
 	

@@ -1,31 +1,49 @@
 event_inherited()
-grav = 0.5
-hsp = 0
-vsp = 0
-movespeed = 1
-state = PlayerState.frozen
-baddieStunTimer = 0
-alarm[0] = 150
-canRoam = true
-flying = 0
-straightthrow = 0
-thrown = 0
-reset = 0
-flash = false
-baddieSpriteIdle = spr_gumslime_stun
-baddieSpriteStun = spr_gumslime_stun
+
+baddieSpriteIdle = undefined
 baddieSpriteWalk = spr_popice
-baddieSpriteTurn = spr_popice
-baddieSpriteGrabbed = spr_gumslime_stun
+baddieSpriteStun = spr_gumslime_stun
 baddieSpriteScared = spr_gumslime_scared
+baddieSpriteTurn = spr_popice_turn
+baddieSpriteHit = undefined
 baddieSpriteDead = spr_gumslime_dead
-paletteSprite = spr_gumslimePalette
-throw_frame = 15
-spr_throw = spr_popice_sneeze
-enemyAttackTimer = 200
-hp = 10
-slapped = 0
-grounded = 1
-birdCreated = 0
-boundbox = 0
-idletimer = 200
+baddieSpriteAttack = spr_popice_sneeze
+state = PlayerState.frozen
+
+enemyAttack_TriggerEvent = function()
+{
+	if (scr_enemy_playerisnear(400, 20) && grounded && state == PlayerState.frozen && enemyAttackTimer == 0)
+	{
+		state = PlayerState.titlescreen
+		substate = 0
+		movespeed = 0
+		var _player = get_nearestPlayer()
+		image_xscale = -getFacingDirection(_player.x, x)
+		sprite_index = baddieSpriteAttack
+		image_index = 0
+	}
+}
+
+enemyState_Attack = function()
+{
+	hsp = 0;
+
+	if (sprite_index == baddieSpriteAttack)
+	{
+		scr_enemyThrowDefault(spr_popice_sneeze,13,0.35, function() 
+		{
+			instance_create(x + image_xscale * 5, y - 20, obj_popice_sneezeparticle,
+			{
+			baddieID: id,
+			image_xscale : image_xscale,
+			hsp : 0
+			})
+		})
+		if (sprite_animation_end())
+		{
+		state = PlayerState.frozen;
+		sprite_index = baddieSpriteWalk;
+		enemyAttackTimer = 200;
+		}
+	}
+}

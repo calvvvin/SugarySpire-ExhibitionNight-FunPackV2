@@ -15,7 +15,7 @@ enemyAttack_TriggerEvent = function()
 {
     var _player;
     
-    if (scr_enemy_playerisnear(150,150) && grounded && state == States.frozen && enemyAttackTimer <= 0)
+    if (scr_enemy_playerisnear(150,150) && grounded && state == PlayerState.frozen && enemyAttackTimer <= 0)
     {
         state = PlayerState.titlescreen;
         hsp = 0;
@@ -44,6 +44,6 @@ enemyState_Attack = function()
 		image_speed = 0.35;
 		movespeed = defaultMovespeed;
 		enemyAttackTimer = 200;
-		state = States.frozen;
+		state = PlayerState.frozen;
 	}
 }
