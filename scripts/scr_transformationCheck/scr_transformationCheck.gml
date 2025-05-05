@@ -24,6 +24,25 @@ function scr_setTransfoTip(arg0)
 			global.TransfoPrompt = "prompt_fireass"
 			break
 		
+		case PlayerState.frostburnnormal:
+		case PlayerState.frostburnjump:
+		case PlayerState.frostburnslide:
+		case PlayerState.frostburnstick:
+		case PlayerState.frostburndrift:
+			global.TransfoPrompt = "prompt_frostburn"
+			break
+		
+		case PlayerState.doughmount:
+		case PlayerState.doughmountspin:
+		case PlayerState.doughmountjump:
+		case PlayerState.doughmountballoon:
+			global.TransfoPrompt = "prompt_doughmount"
+			break
+		
+		case PlayerState.bottlerocket:
+			global.TransfoPrompt = "prompt_rocket"
+			break
+		
 		default:
 			global.TransfoPrompt = ""
 			break

@@ -1,11 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_grindRail_Slope",
+  "name": "obj_dogMountspawner",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -13,10 +12,7 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "parentObjectId": {
-    "name": "obj_slopePlatform",
-    "path": "objects/obj_slopePlatform/obj_slopePlatform.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -33,12 +29,9 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_MinecartrailSlopeEditor",
-    "path": "sprites/spr_MinecartrailSlopeEditor/spr_MinecartrailSlopeEditor.yy",
+    "name": "spr_dogMount_awake",
+    "path": "sprites/spr_dogMount_awake/spr_dogMount_awake.yy",
   },
-  "spriteMaskId": {
-    "name": "spr_MinecartrailSlopeEditor",
-    "path": "sprites/spr_MinecartrailSlopeEditor/spr_MinecartrailSlopeEditor.yy",
-  },
-  "visible": false,
+  "spriteMaskId": null,
+  "visible": true,
 }

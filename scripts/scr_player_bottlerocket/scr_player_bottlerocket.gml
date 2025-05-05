@@ -9,9 +9,6 @@ function state_player_bottlerocket()
 		movespeed = approach(movespeed, 0, 0.5)
 		hsp = xscale * movespeed
 		
-		if (!grounded)
-			substate = 0
-		
 		if (movespeed <= 0)
 		{
 			xscale *= -1
@@ -43,6 +40,7 @@ function state_player_bottlerocket()
 				{
 					substate = 1
 					sprite_index = spr_player_PZ_bottleRocket_turn
+					event_play_oneshot("event:/SFX/player/machslideboost", x, y)
 					image_index = 0
 				}
 				else
@@ -60,7 +58,7 @@ function state_player_bottlerocket()
 				state = PlayerState.mach2
 				vsp = -15
 				image_index = 0
-				sprite_index = spr_mach2_spinJump
+				sprite_index = spr_secondjump1
 				
 				if (!instance_exists(obj_rocketdud))
 					instance_create(x, y, obj_rocketdud)
@@ -93,5 +91,12 @@ function state_player_bottlerocket()
 			sprite_index = spr_player_PZ_slipSlide_intro
 			state = PlayerState.puddle
 		}
+	}
+	if (!instance_exists(obj_chargeEffect) && (sprite_index != spr_player_PZ_bottleRocket_turn || sprite_index != spr_player_PZ_bottleRocket_intro))
+	{
+		instance_create(x, y, obj_chargeEffect, 
+		{
+			playerID: id
+		})
 	}
 }

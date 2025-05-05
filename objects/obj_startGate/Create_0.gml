@@ -17,7 +17,7 @@ gotoLevel = function(arg0)
 	{
 		image_index = 0
 		
-		if (true && global.InternalLevelName != "tutorial")
+		if (room == hub_paintstudio || room == hub_molasses)
 		{
 			sprite_index = spr_enterpainting
 			event_play_oneshot("event:/SFX/general/enterpainting")

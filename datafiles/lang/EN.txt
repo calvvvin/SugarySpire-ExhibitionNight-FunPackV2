@@ -336,11 +336,14 @@
 "prompt_dash"       : "Dash"
 "prompt_crouch"     : "Crouch"
 "prompt_pullback"   : "Pull Back"
-"prompt_test" 		: "[kL][kD][kU] Testing [kL][kL]"
+"prompt_test" 	    : "[kL][kD][kU] Testing [kL][kL]"
 
 "prompt_werecotton" : "[kJ][kJ] Double Jump [kG] Dig"
 "prompt_minecart" : "[kJ] Jump [kD] Crouch"
 "prompt_fling" : "[kL][kD][kR] Pull Back"
+"prompt_frostburn" : "[kJ][kJ] Double Jump [kL][kR] Drift"
+"prompt_doughmount" : "[kG] Spin"
+"prompt_rocket" : "[kL][kR] Turn [kJ] Dismount"
 "prompt_fireass" : "[kG] Dash"
 
 # Tutorial prompt.

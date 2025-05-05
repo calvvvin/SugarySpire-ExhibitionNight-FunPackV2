@@ -105,6 +105,7 @@
     {"name":"inst_111108","path":"rooms/cafe_7B/cafe_7B.yy",},
     {"name":"inst_111109","path":"rooms/cafe_7B/cafe_7B.yy",},
     {"name":"inst_111110","path":"rooms/cafe_7B/cafe_7B.yy",},
+    {"name":"inst_625E9B00","path":"rooms/cafe_7B/cafe_7B.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -218,6 +219,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_111108","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":13.0,"scaleY":2.0,"x":2944.0,"y":2368.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_111109","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":23.0,"scaleY":6.0,"x":1728.0,"y":2112.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_111110","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_solid","path":"objects/obj_solid/obj_solid.yy",},"properties":[],"rotation":0.0,"scaleX":77.0,"scaleY":2.0,"x":704.0,"y":2048.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_625E9B00","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dogMountspawner","path":"objects/obj_dogMountspawner/obj_dogMountspawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1520.0,"y":2386.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_2","assets":[
         {"resourceType":"GMRSpriteGraphic","resourceVersion":"1.0","name":"graphic_2A387336_1","animationSpeed":0.0,"colour":4294967295,"frozen":false,"headPosition":3.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_estatedoor","path":"sprites/spr_estatedoor/spr_estatedoor.yy",},"x":1930.0,"y":2528.0,},

@@ -192,7 +192,7 @@ function scr_playersounds()
 	if ((saved_state != PlayerState.Sjump || sprite_index == spr_superjumpCancelIntro) && event_instance_isplaying(sndSuperjumpRelease))
 		fmod_studio_event_instance_stop(sndSuperjumpRelease, true)
 	
-	if (saved_state == PlayerState.mach2 || saved_state == PlayerState.run || saved_state == PlayerState.mach3 || saved_state == PlayerState.climbwall)
+	if (saved_state == PlayerState.mach2 || saved_state == PlayerState.run || saved_state == PlayerState.mach3 || saved_state == PlayerState.climbwall || saved_state == PlayerState.bottlerocket)
 	{
 		if (!event_instance_isplaying(sndMach))
 			fmod_studio_event_instance_start(sndMach)
@@ -205,7 +205,7 @@ function scr_playersounds()
 			machsnd = 2
 		else if ((saved_state == PlayerState.mach3 && sprite_index != spr_crazyrun) || saved_state == PlayerState.run || (saved_state == PlayerState.climbwall && verticalMovespeed >= 12))
 			machsnd = 3
-		else if (sprite_index == spr_crazyrun)
+		else if (sprite_index == spr_crazyrun || (saved_state == PlayerState.bottlerocket && sprite_index != spr_player_PZ_bottleRocket_intro && sprite_index != spr_player_PZ_bottleRocket_turn))
 			machsnd = 4
 		
 		fmod_studio_event_instance_set_paused(sndMach, false)

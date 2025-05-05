@@ -88,6 +88,7 @@
     {"name":"inst_415F5C3A","path":"rooms/cafe_3/cafe_3.yy",},
     {"name":"inst_51C76963","path":"rooms/cafe_3/cafe_3.yy",},
     {"name":"inst_696ED8ED","path":"rooms/cafe_3/cafe_3.yy",},
+    {"name":"inst_23CC4353","path":"rooms/cafe_3/cafe_3.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -218,6 +219,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_696ED8ED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_betonbacon","path":"objects/obj_betonbacon/obj_betonbacon.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":null,"propertyId":null,"value":"true;",},
           ],"rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":3312.0,"y":1040.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_23CC4353","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dogMountspawner","path":"objects/obj_dogMountspawner/obj_dogMountspawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":2976.0,"y":1042.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_Escape","depth":432,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_1","assets":[

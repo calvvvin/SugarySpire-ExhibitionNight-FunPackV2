@@ -1,5 +1,3 @@
-x += (image_xscale * 6)
-
 if (scr_solid(x + image_xscale, y) && bumpcount < 1)
 {
 	image_xscale *= -1

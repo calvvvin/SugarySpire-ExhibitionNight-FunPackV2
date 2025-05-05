@@ -138,6 +138,7 @@
     {"name":"inst_50E685EC","path":"rooms/cafe_6/cafe_6.yy",},
     {"name":"inst_5D0786C8","path":"rooms/cafe_6/cafe_6.yy",},
     {"name":"inst_116756F8","path":"rooms/cafe_6/cafe_6.yy",},
+    {"name":"inst_5B4C7C06","path":"rooms/cafe_6/cafe_6.yy",},
     {"name":"inst_64E3CCF6","path":"rooms/cafe_6/cafe_6.yy",},
   ],
   "isDnd": false,
@@ -281,6 +282,7 @@
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_50E685EC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3584.0,"y":2304.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5D0786C8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3616.0,"y":2272.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_116756F8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_collect","path":"objects/obj_collect/obj_collect.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":3648.0,"y":2304.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_5B4C7C06","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_dogMountspawner","path":"objects/obj_dogMountspawner/obj_dogMountspawner.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1344.0,"y":2834.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_64E3CCF6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_slope","path":"objects/obj_slope/obj_slope.yy",},"properties":[],"rotation":0.0,"scaleX":-3.0,"scaleY":2.0,"x":2464.0,"y":2592.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":true,"visible":true,},
     {"resourceType":"GMRAssetLayer","resourceVersion":"1.0","name":"Assets_2","assets":[

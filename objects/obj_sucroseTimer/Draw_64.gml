@@ -1,3 +1,4 @@
+//credit to ghost for this
 var timeinsecs, mins, secs, display_mins, display_secs, gaining_time;
 
 gaining_time = target_fill > timer;
@@ -20,7 +21,7 @@ if (mins < 10)
 if (sprite_index != spr_timer_timesup)
 {
 	draw_set_color(gaining_time ? #60D048 : #F80000);
-	draw_text_scribble(415, timer_y, display_mins);
-	draw_text_scribble(495, timer_y, display_secs);
+	draw_text_scribble(415, timer_y + 10, display_mins);
+	draw_text_scribble(495, timer_y + 10, display_secs);
 	draw_set_color(c_white);
 }
